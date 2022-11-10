@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://www.grandsierraresort.com/hubfs/casino/GSR-casino-floor-view-of-table-games-and-slots_q085_1920x1080.jpg);
+    background-size: cover;
+    color: white;
+    font-family: sans-serif;
+
+   
+}
+
+#container{
+    width: 50% ;
+    height:300px;
+    margin:auto;
+    background-color: rgba(120, 77, 88, 0.6);
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 15px;
+    padding: 20px;
+
+}
+
