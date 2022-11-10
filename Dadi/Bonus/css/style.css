@@ -23,4 +23,16 @@ body{
     padding: 20px;
 
 }
+button{
+    margin-top: 70px;
+}
+#dice img{
+    width: 19%;
+    margin-top: 20px;
+}
+#flex{
+    display: flex;
+    justify-content: space-around;
+    display: none;
+}
 
