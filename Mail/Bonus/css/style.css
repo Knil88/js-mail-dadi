@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://alcatrazmilano.it/wp-content/uploads/2022/06/schiumaparty-1lug-eventoFB.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+    color: darkgrey;
+}
+
+#container{
+    width: 50% ;
+    height:300px;
+    margin:auto;
+    background-color: rgba(120, 77, 88, 0.6);
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 15px;
+    padding: 20px;
+
+}
+
+#inputmail{
+    padding: 5px;
+    font-weight: bold;
+}
+#generate , #reset{
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+   margin-top: 25px;
+   margin-left: 15px;
+   margin-right: 15px;
+   cursor: pointer;
+   background-color: white;
+   transition: ease-in-out 0.5s;
+   font-weight: bold;
+
+}
+#generate:hover {
+    color: greenyellow;
+    background-color: blue;
+    transform: scale(1.2);
+    
+}
+
+#reset:hover {
+    color:yellowgreen;
+    background-color: red;
+    transform: scale(1.2);
+    
+}
