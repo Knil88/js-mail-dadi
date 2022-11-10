@@ -23,6 +23,17 @@ body{
     padding: 20px;
 
 }
+
+#big-title{
+    background-color: red;
+    border-radius: 15px;
+    width: 50%;
+    text-align: center;
+    
+    margin: 10px auto;
+    padding: 10px;
+
+}
 button{
     margin-top: 70px;
 }
@@ -34,5 +45,14 @@ button{
     display: flex;
     justify-content: space-around;
     display: none;
+}
+
+h3 , #userdice , #pcdice{
+
+    border: 1px solid white;
+    text-align: center;
+    background-color: red;
+    border-radius: 5px;
+    padding:5px;
 }
 
