@@ -7,24 +7,25 @@ function (event){
     //Creiamo variabili
 
     let userdice = Math.floor(Math.random()* 5) + 1;
+    const userdiceImage = 'assets/dice'+ userdice + '.png';
+    document.querySelectorAll('img')[0].setAttribute('src',userdiceImage);
 
     let pcdice = Math.floor(Math.random()* 5) + 1;
+    const pcdiceImage = 'assets/dice'+ pcdice + '.png';
+    document.querySelectorAll('img');
+    document.querySelectorAll('img')[1].setAttribute('src',pcdiceImage);
 
     
     event.preventDefault()
     if(userdice > pcdice){
         console.log("Complimenti hai vinto")
-        document.getElementById("title").innerHTML = `Complimenti hai vinto`;
-        document.getElementById("userdice").innerHTML = `${userdice}`;
-        document.getElementById("pcdice").innerHTML = `${pcdice}`;
+        
         
 
    }
    if(userdice < pcdice){
        console.log("Hai perso")
-       document.getElementById("title").innerHTML = `Spiacente hai perso`;
-       document.getElementById("userdice").innerHTML = `${userdice}`;
-       document.getElementById("pcdice").innerHTML = `${pcdice}`;
+       
        
        
 
@@ -32,9 +33,7 @@ function (event){
    else if(userdice === pcdice){
    
        console.log("pareggio")
-       document.getElementById("title").innerHTML = `Pareggio`;
-       document.getElementById("userdice").innerHTML = `${userdice}`;
-       document.getElementById("pcdice").innerHTML = `${pcdice}`;
+      
        
 
    
