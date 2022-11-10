@@ -8,7 +8,8 @@
  // Variabili bottoni
 
  let btn = document.getElementById("generate");
-let btnReset = document.getElementById("reset");
+   let btnReset = document.getElementById("reset");
+   let btnSign = document.getElementById("sign");
 
 // Creiamo la nostra Lista di Mail 
 
@@ -18,7 +19,7 @@ let mailList = ["pinco@gmail.com","pallo@gmail.com","tizio@gmail.com","caio@gmai
 btn.addEventListener("click",
 function(event){
    event.preventDefault()
-   let name = document.getElementById ("inputmail").value;
+    yourMail = document.getElementById ("inputmail").value;
 
    
 
@@ -29,7 +30,11 @@ function(event){
          guest = true;
       }
        else if(guest == false){
-         document.getElementById("title").innerHTML = `Ci dispiace ma lua sua mail non è presente tra quelle registrate`
+         document.getElementById("title").innerHTML = `Ci dispiace ma la sua mail non è presente tra quelle registrate vuole registrarsi?`
+         btnSign = document.querySelector("#sign") ;
+         btnSign.style.display="inline-block";
+         btn = document.querySelector("#generate") ;
+         btn.style.display="none";
          console.log("spiacente")
       }
  }
@@ -44,6 +49,14 @@ function (event){
    
    
 
+}
+)
+btnSign.addEventListener("click",
+function(event){
+   event.preventDefault()
+   mailList.push(yourMail);
+   document.getElementById("title").innerHTML = `Complimenti ora sei registrato all'evento`;
+   
 }
 )
 

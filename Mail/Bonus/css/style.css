@@ -28,9 +28,13 @@ body{
     font-weight: bold;
 }
 #title{
-    color: red;
+    color:greenyellow;
 }
-#generate , #reset{
+
+#sign{
+    display: none;
+}
+#generate , #reset , #sign{
     border: none;
     border-radius: 10px;
     padding: 5px;
@@ -43,7 +47,7 @@ body{
    font-weight: bold;
 
 }
-#generate:hover {
+#generate:hover , #sign{
     color: greenyellow;
     background-color: blue;
     transform: scale(1.2);
