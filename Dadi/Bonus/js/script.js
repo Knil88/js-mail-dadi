@@ -1,7 +1,7 @@
 // Gioco  dadi 
 
 //Creiamo una const myButton
-const myButton = document.querySelector("#generate");
+const myButton = document.getElementById("generate");
 
  myButton = document.addEventListener("click",
 function (event){
