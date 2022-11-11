@@ -1,8 +1,9 @@
 // Gioco  dadi 
 
+//Creiamo una const myButton
+const myButton = document.querySelector("#generate");
 
-
-const myButton = document.addEventListener("click",
+ myButton = document.addEventListener("click",
 function (event){
     //Creiamo variabili
 
@@ -10,8 +11,11 @@ function (event){
 
     let pcdice = Math.floor(Math.random()* 5) + 1;
 
+    console.log(userdice,pcdice);
     
     event.preventDefault()
+
+    // se il punteggio di userdice è maggiore vince
     if(userdice > pcdice){
         console.log("Complimenti hai vinto")
         document.getElementById("title").innerHTML = `Complimenti hai vinto`;
@@ -20,6 +24,7 @@ function (event){
         
 
    }
+   // se il punteggio di userdice è minore perde
    if(userdice < pcdice){
        console.log("Hai perso")
        document.getElementById("title").innerHTML = `Spiacente hai perso`;
